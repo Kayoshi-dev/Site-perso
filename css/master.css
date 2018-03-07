@@ -7,35 +7,45 @@ body {
   color: white;
 }
 
+::selection {
+  background-color: #5352ed;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#5352ed;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #130f40;
+}
 
 header, footer {
+
   background-color: #1e272e;
   color: white;
 }
 
 /* HEADER */
 header {
-
+  font-size: 1.2rem;
 }
 
 .espacement {
-  padding: 15px;
+  padding: 18px;
 }
 
 .video-container {
   width: 100%;
-
-}
-
-video {
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
   height: 500px;
-  width: 100%;
-  object-fit: fill;
-  min-width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/love-coding.jpg);
+  background-size: cover;
+  filter: blur(3px);
+  overflow: hidden;
 }
 
 h3 {
@@ -50,7 +60,7 @@ main {
 
 /* FOOTER */
 footer {
-  border: 1px solid red;
+
 }
 
 /* GENERAL */
@@ -65,6 +75,8 @@ h2 {
 
 a {
   color: white;
+  border-bottom: 3px solid transparent;
+  transition: 0.8s;
 }
 
 a:hover, a:focus, a:active {
